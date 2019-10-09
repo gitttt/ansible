@@ -97,6 +97,7 @@ Function New-LegacySelfSignedCert
     echo gooooo-----------------------------
     echo $hostnonFQDN
     echo $env:computerName
+    Write-Error "Access denied."
     echo giiiii-----------------------------
     $hostFQDN = [System.Net.Dns]::GetHostByName(($env:computerName)).Hostname
     echo geeeee-----------------------------
