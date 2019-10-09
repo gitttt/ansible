@@ -94,6 +94,8 @@ Function New-LegacySelfSignedCert
     )
 
     $hostnonFQDN = $env:computerName
+    echo $hostnonFQDN
+    echo $env:computerName
     $hostFQDN = [System.Net.Dns]::GetHostByName(($env:computerName)).Hostname
     $SignatureAlgorithm = "SHA256"
 
